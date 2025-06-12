@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Awesome Quiz App</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div id="start-screen">
+      <h1>Welcome to the Quiz App</h1>
+      <select id="category-select">
+        <option value="web">Web Development</option>
+        <option value="general">General Knowledge</option>
+      </select>
+      <button id="start-btn" class="btn">Start Quiz</button>
+    </div>
+
+    <div class="quiz-container hidden" id="quiz">
+      <div class="progress">
+        <span id="progress-text">Question 1 of 4</span>
+        <span id="timer">15s</span>
+      </div>
+      <div class="quiz-header fade" id="quiz-header">
+        <h2 id="question">Question Text</h2>
+        <button class="btn" id="a">Answer A</button>
+        <button class="btn" id="b">Answer B</button>
+        <button class="btn" id="c">Answer C</button>
+        <button class="btn" id="d">Answer D</button>
+      </div>
+      <button id="submit" class="btn submit-btn">Submit</button>
+      <div class="result" id="result"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
