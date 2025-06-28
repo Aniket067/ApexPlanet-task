@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NotesFlow - Modern Note Taking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>NotesFlow</h1>
+            <p>Capture your thoughts with style</p>
+        </div>
+
+        <div class="main-content">
+            <div class="sidebar">
+                <button class="add-note-btn" id="addNoteBtn">
+                    <span>+</span> New Note
+                </button>
+                
+                <input type="text" class="search-box" id="searchBox" placeholder="Search notes...">
+                
+                <div class="stats">
+                    <span id="noteCount">0 notes</span>
+                    <span id="selectedNote"></span>
+                </div>
+                
+                <div class="notes-list" id="notesList">
+                    <!-- Notes will be populated here -->
+                </div>
+            </div>
+
+            <div class="editor-area">
+                <div class="editor-header">
+                    <input type="text" class="note-title-input" id="noteTitleInput" placeholder="Enter note title...">
+                    <button class="save-btn" id="saveBtn">Save</button>
+                </div>
+                
+                <textarea class="note-content" id="noteContent" placeholder="Start writing your note..."></textarea>
+                
+                <div class="empty-state" id="emptyState">
+                    <div class="empty-icon">📝</div>
+                    <h3>Select a note to start editing</h3>
+                    <p>Choose a note from the sidebar or create a new one</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
