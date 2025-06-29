@@ -1,0 +1,73 @@
+.n-wrapper {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+.n-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.n-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.n-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.n-list {
+    flex: 10;
+    margin-right: 2rem;
+}
+
+.n-list ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.n-list ul li:hover {
+    cursor: pointer;
+    color: var(--orange);
+}
+
+.n-button {
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+    .n-left {
+        gap: 0.5rem;
+    }
+
+    .n-name {
+        font-size: 1rem;
+    }
+
+    .n-right {
+        justify-content: center;
+    }
+
+    .n-list {
+        display: none;
+    }
+
+    .n-button {
+        display: block;
+    }
+}

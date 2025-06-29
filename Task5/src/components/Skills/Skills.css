@@ -1,0 +1,168 @@
+.skills {
+    padding: 0 3rem;
+    display: flex;
+    height: 90vh;
+    margin-top: 4rem;
+}
+
+.w-right {
+    position: relative;
+}
+
+.w-maincircle {
+    left: 9rem; 
+    position: relative;
+    height: 18rem;
+    width: 18rem;
+    border-radius: 100%;
+    box-shadow: var(--smboxShadow);
+    top: 2rem;
+    background: white;
+}
+
+.w-maincircle > * {
+    position: absolute;
+}
+
+.w-maincircle > :nth-child(1) {
+    top: -3rem;
+    left: 6rem;
+}
+
+.w-maincircle > :nth-child(2) {
+    top: 5rem;
+    left: -3rem;
+}
+
+.w-maincircle > :nth-child(3) {
+    top: 5rem;
+    left: 6rem;
+}
+
+.w-maincircle > :nth-child(4) {
+    top: 5rem;
+    left: 15rem;
+}
+
+.w-maincircle > :nth-child(5) {
+    top: 13rem;
+    left: 6rem;
+}
+
+.w-secCirlce {
+    width: 6rem;
+    height: 6rem;
+    position: absolute;
+    border-radius: 100%;
+    border: 5px solid #ebebeb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    box-shadow: var(--smboxShadow);
+    background-color: white;
+}
+
+.w-secCirlce > img {
+    transform: scale(0.5);
+}
+
+.w-bgcircle {
+    position: absolute;
+    height: 13rem;
+    width: 13rem;
+    border-radius: 100%;
+    z-index: -1;
+}
+
+.bluecircle {
+    background-color: rgb(46, 46, 176);
+    left: 18rem;
+    top: 0;
+}
+
+.yellowcircle {
+    background: rgb(189, 189, 38);
+    left: 18rem;
+    top: 8rem;
+}
+
+@media screen and (max-width: 480px) {
+    .skills {
+        flex-direction: column; 
+        height: auto; 
+        padding: 0 1rem; 
+        gap: 3rem; 
+        align-items: center;
+        justify-content: center; 
+    }
+
+    .w-right {
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        margin-top: 2rem; 
+    }
+
+    .w-maincircle {
+        height: 12rem;
+        width: 12rem;
+        margin-bottom: 2rem;
+        left: auto; 
+    }
+
+    .w-maincircle > :nth-child(1) {
+        top: -2rem;
+        left: 4rem;
+    }
+
+    .w-maincircle > :nth-child(2) {
+        top: 3rem;
+        left: -1.5rem;
+    }
+
+    .w-maincircle > :nth-child(3) {
+        top: 3rem;
+        left: 4rem;
+    }
+
+    .w-maincircle > :nth-child(4) {
+        top: 3rem;
+        left: 9.5rem;
+    }
+
+    .w-maincircle > :nth-child(5) {
+        top: 10rem;
+        left: 4rem;
+    }
+
+    .w-secCirlce {
+        width: 4rem; 
+        height: 4rem; 
+    }
+
+    .w-secCirlce > img {
+        transform: scale(0.4); 
+    }
+
+    .w-bgcircle {
+        height: 10rem; 
+        width: 10rem; 
+        left: calc(50% - 5rem); 
+        top: 8rem; 
+    }
+
+    .bluecircle {
+        height: 10rem; 
+        width: 10rem; 
+        left: calc(50% - 5rem);
+        top: -1.5rem;
+    }
+
+    .yellowcircle {
+        height: 10rem; 
+        width: 10rem; 
+        left: calc(50% - 5rem);
+        top: 6.5rem;
+    }
+}
